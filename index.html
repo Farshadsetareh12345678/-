@@ -3,164 +3,102 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>نگارخانهٔ نور — شعر، هویت، زیبایی</title>
-  <meta name="description" content="تجربه‌ای سینمایی از شعر و هویت ایرانی با شیشه، نور و پارالاکس — وب‌سایتی لوکس و تعاملی." />
-  <meta name="theme-color" content="#0b0e14" />
-
-  <!-- Open Graph / Social -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="نگارخانهٔ نور — شعر، هویت، زیبایی">
-  <meta property="og:description" content="نور، شیشه، پارالاکس، و تایپوگرافی فارسی — تجربه‌ای سینمایی و تعاملی.">
-  <meta property="og:image" content="assets/cover.jpg">
-  <meta property="og:locale" content="fa_IR">
-
-  <!-- Persian font -->
+  <title>پژوهشگر فکت‌های علمی</title>
+  <meta name="description" content="وب‌سایتی سینمایی و لوکس برای نمایش فکت‌های علمی دسته‌بندی‌شده با طراحی خفن و انیمیشن‌های مدرن." />
   <link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css" rel="stylesheet" />
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Custom cursor -->
-  <div class="cursor" aria-hidden="true"></div>
-  <div class="cursor-outline" aria-hidden="true"></div>
+  <!-- Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-outline"></div>
 
   <!-- Noise + blobs -->
-  <div class="noise" aria-hidden="true"></div>
-  <div class="blob blob-1" aria-hidden="true"></div>
-  <div class="blob blob-2" aria-hidden="true"></div>
+  <div class="noise"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
 
   <!-- Header -->
   <header class="site-header">
-    <nav class="nav" aria-label="مسیر اصلی">
-      <a class="brand" href="#hero" data-magnet>نگارخانهٔ نور</a>
+    <nav class="nav">
+      <a class="brand" href="#hero" data-magnet>پژوهشگر</a>
       <div class="nav-links">
-        <a href="#gallery" data-magnet>نگاره‌ها</a>
-        <a href="#poems" data-magnet>گزیده شعر</a>
-        <a href="#sequence-1" data-magnet>سکانس</a>
+        <a href="#physics" data-magnet>فیزیک</a>
+        <a href="#biology" data-magnet>زیست</a>
+        <a href="#space" data-magnet>فضا</a>
         <a href="#about" data-magnet>درباره</a>
-      </div>
-      <div class="nav-ctrls">
-        <button class="btn tiny" data-theme-toggle data-magnet aria-pressed="false">تم: شب</button>
-        <button class="btn tiny" id="sound" data-magnet aria-pressed="false" aria-label="صوت محیطی">صوت محیط</button>
       </div>
     </nav>
   </header>
 
-  <!-- Scroll Telegraph -->
-  <div class="telegraph" aria-hidden="true">
-    <div class="telegraph-track"><span class="telegraph-thumb"></span></div>
-    <div class="telegraph-label"><b>فصل:</b> <span id="chapter">آغاز</span> — <span id="progress">0%</span></div>
-  </div>
-
-  <main>
-    <!-- Hero -->
-    <section id="hero" class="hero" aria-label="صحنه آغازین">
-      <div class="hero-bg" data-parallax data-speed="0.2"></div>
-      <div class="hero-glow" data-parallax data-speed="0.35"></div>
-      <div class="hero-content">
-        <h1 class="title prism" data-split>
-          نور که می‌تابد، کلمات از شیشه عبور می‌کنند
-        </h1>
-        <p class="subtitle">
-          تجربه‌ای تعاملی از شعر و هویت ایرانی؛ لمس کن، حرکت بده، و عمق را حس کن.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="#gallery" data-magnet>شروع سفر</a>
-          <a class="btn ghost" href="#poems" data-magnet>شنیدن سکوت</a>
-        </div>
-        <div class="scroll-hint" aria-hidden="true">
-          <span>اسکرول کن</span>
-          <i class="chev"></i>
-        </div>
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <h1 class="title prism" data-split>فکت‌های علمی که ذهن پژوهشگر را روشن می‌کنند</h1>
+      <p class="subtitle">دسته‌بندی‌شده، زیبا، و با طراحی سینمایی</p>
+      <div class="cta">
+        <a class="btn primary" href="#physics" data-magnet>شروع پژوهش</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Glass gallery -->
-    <section id="gallery" class="section gallery" aria-labelledby="gallery-heading">
-      <h2 id="gallery-heading" class="section-title">نگاره‌های شیشه‌ای</h2>
-      <div class="cards">
-        <article class="card" data-io>
-          <div class="card-media parallax-tilt" data-parallax data-speed="0.08"></div>
-          <div class="card-body">
-            <h3 class="card-title">سایهٔ سرو</h3>
-            <p class="card-text">نسیمی آرام، روی شیشه موج می‌زند؛ شهر در انعکاسِ سرو نفس می‌کشد.</p>
-            <a class="btn tiny" href="#" data-magnet aria-label="مشاهده سایه سرو">مشاهده</a>
-          </div>
-        </article>
-
-        <article class="card" data-io>
-          <div class="card-media parallax-tilt alt" data-parallax data-speed="0.1"></div>
-          <div class="card-body">
-            <h3 class="card-title">طلوع در کویر</h3>
-            <p class="card-text">گرمای طلایی، خطوط شن را چون خط نستعلیق می‌نویسد.</p>
-            <a class="btn tiny" href="#" data-magnet aria-label="مشاهده طلوع در کویر">مشاهده</a>
-          </div>
-        </article>
-
-        <article class="card" data-io>
-          <div class="card-media parallax-tilt blue" data-parallax data-speed="0.06"></div>
-          <div class="card-body">
-            <h3 class="card-title">آبی هیچ</h3>
-            <p class="card-text">جایی میان نگاه و خیال، آبی به سکوت می‌رسد.</p>
-            <a class="btn tiny" href="#" data-magnet aria-label="مشاهده آبی هیچ">مشاهده</a>
-          </div>
-        </article>
+  <!-- Physics Facts -->
+  <section id="physics" class="section facts">
+    <h2 class="section-title">فیزیک</h2>
+    <div class="fact-grid">
+      <div class="fact-card" data-io>
+        <h3>نور</h3>
+        <p>نور در خلأ با سرعت تقریبی ۳۰۰ هزار کیلومتر بر ثانیه حرکت می‌کند.</p>
       </div>
-    </section>
-
-    <!-- Poems -->
-    <section id="poems" class="section poems" aria-labelledby="poems-heading">
-      <h2 id="poems-heading" class="section-title">گزیدهٔ شعر</h2>
-
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-inner">
-          <span>دلت به نور بسپار — بهار از پنجره می‌آید — </span>
-          <span>سکوت هم شعر است — میان ما و ماه یک شیشه فاصله — </span>
-          <span>چشم اگر دریچه باشد، دنیا نور می‌شود — </span>
-        </div>
+      <div class="fact-card" data-io>
+        <h3>اتم</h3>
+        <p>۹۹.۹۹۹۹۹٪ حجم اتم فضای خالی است.</p>
       </div>
+    </div>
+  </section>
 
-      <div class="poem-grid">
-        <figure class="poem-card" data-io>
-          <blockquote>«به باغ می‌روم، شاید که باد، نام تو را از گلوی سرو بخوانَد.»</blockquote>
-          <figcaption>الهام از هوای تهران</figcaption>
-        </figure>
-        <figure class="poem-card" data-io>
-          <blockquote>«شب که می‌رسد، پنجره‌ها ستاره می‌کارند روی شیشه.»</blockquote>
-          <figcaption>شبی در اصفهان</figcaption>
-        </figure>
-        <figure class="poem-card" data-io>
-          <blockquote>«نور که خم می‌شود، خیابان به شعر بدل می‌گردد.»</blockquote>
-          <figcaption>راهی به شمال</figcaption>
-        </figure>
+  <!-- Biology Facts -->
+  <section id="biology" class="section facts">
+    <h2 class="section-title">زیست‌شناسی</h2>
+    <div class="fact-grid">
+      <div class="fact-card" data-io>
+        <h3>DNA</h3>
+        <p>اگر DNA هر سلول بدن باز شود، طول آن حدود ۲ متر خواهد بود.</p>
       </div>
-    </section>
+      <div class="fact-card" data-io>
+        <h3>مغز</h3>
+        <p>مغز انسان حدود ۸۶ میلیارد نورون دارد.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Cinematic sequence -->
-    <section class="sequence" id="sequence-1" aria-labelledby="seq1-title">
-      <div class="seq-bg" aria-hidden="true"></div>
-      <div class="seq-fore">
-        <h2 class="seq-title" id="seq1-title">شهرِ شیشه، نفسِ نور</h2>
-        <p class="seq-text">با هر قدم، نور شکل دیگر می‌گیرد.</p>
+  <!-- Space Facts -->
+  <section id="space" class="section facts">
+    <h2 class="section-title">فضا</h2>
+    <div class="fact-grid">
+      <div class="fact-card" data-io>
+        <h3>کهکشان</h3>
+        <p>کهکشان راه شیری بیش از ۱۰۰ میلیارد ستاره دارد.</p>
       </div>
-    </section>
+      <div class="fact-card" data-io>
+        <h3>سیاه‌چاله</h3>
+        <p>گرانش سیاه‌چاله به حدی است که حتی نور هم نمی‌تواند فرار کند.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- About -->
-    <section id="about" class="section about" aria-labelledby="about-heading">
-      <h2 id="about-heading" class="section-title">دربارهٔ این تجربه</h2>
-      <p class="about-text">
-        این نگارخانه، ادای دِینی است به ظرافت فارسی: شفافیتِ شیشه، عمقِ نور، و وزنِ کلمه.
-        با هر حرکتِ موس یا اسکرول، لایه‌ها پاسخ می‌دهند تا حس حضور و لمس زنده شود.
-      </p>
-      <div class="cta-row">
-        <a class="btn primary" href="#hero" data-magnet>بازگشت به آغاز</a>
-      </div>
-    </section>
-  </main>
+  <!-- About -->
+  <section id="about" class="section about">
+    <h2 class="section-title">دربارهٔ پژوهشگر</h2>
+    <p class="about-text">
+      این وب‌سایت برای نمایش فکت‌های علمی طراحی شده است تا پژوهشگر درون شما را بیدار کند.
+      طراحی لوکس، انیمیشن‌های نرم و پس‌زمینه‌های سینمایی تجربه‌ای متفاوت می‌سازند.
+    </p>
+  </section>
 
   <footer class="site-footer">
-    <p>© ۱۴۰۴ نگارخانهٔ نور — ساخته شده با عشق به زیبایی فارسی</p>
+    <p>© ۱۴۰۴ پژوهشگر — ساخته شده برای دوستداران علم</p>
   </footer>
 
   <script src="script.js"></script>
