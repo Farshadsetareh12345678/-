@@ -1,62 +1,25 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>بررسی اثرات نانو ذرات اکسید مس و اسانس‌های گیاهان</title>
+  <meta charset="UTF-8">
+  <title>چت ساده با AI</title>
+  <style>
+    body { font-family: sans-serif; background:#111; color:#eee; display:flex; flex-direction:column; align-items:center; padding:2rem; }
+    #chat { width:100%; max-width:600px; background:#222; padding:1rem; border-radius:10px; min-height:300px; overflow-y:auto; }
+    .msg { margin:0.5rem 0; }
+    .user { color:#0f0; }
+    .ai { color:#0ff; }
+    input { width:80%; padding:0.5rem; }
+    button { padding:0.5rem 1rem; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>بسم الله الرحمن الرحیم</h1>
-        <div class="logos">
-            <img src="images/logo1.png" alt="لوگوی سازمان استعدادهای درخشان" class="logo">
-            <img src="images/logo2.png" alt="لوگوی ستاد توسعه زیست فناوری" class="logo">
-            <img src="images/logo3.png" alt="لوگوی باشگاه دانش‌آموزی زیست فناوری" class="logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#introduction">مقدمه</a></li>
-                <li><a href="#methodology">روش تحقیق</a></li>
-                <li><a href="#results">نتایج</a></li>
-                <li><a href="#conclusion">بحث و نتیجه‌گیری</a></li>
-                <li><a href="#suggestions">پیشنهادات</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="introduction" class="box">
-            <h2>مقدمه</h2>
-            <p>بیماری کپک خاکستری انگور ناشی از قارچ Botrytis cinerea یکی از شایع‌ترین بیماری‌های بومی منطقه آذربایجان علی الخصوص میوه‌های توت فرنگی، انگور و سایر محصولات فساد پذیر باغی است...</p>
-            <img src="images/image1.jpg" alt="تصویر 1" />
-        </section>
-
-        <section id="methodology" class="box">
-            <h2>روش تحقیق</h2>
-            <p>بررسی اثر ضدقارچی نانوذرات اکسید مس و اسانس‌های گیاهی پونه، زیره سبز و اکالیپتوس...</p>
-            <img src="images/image2.jpg" alt="تصویر 2" />
-        </section>
-
-        <section id="results" class="box">
-            <h2>نتایج</h2>
-            <p>در این پژوهش به بررسی اثرات ضد قارچی نانو ذرات اکسید مس و اسانس‌های چند گیاه پرداخته شد...</p>
-            <img src="images/image3.jpg" alt="تصویر 3" />
-        </section>
-
-        <section id="conclusion" class="box">
-            <h2>بحث و نتیجه‌گیری</h2>
-            <p>اسانس پونه نسبت به دیگر اسانس‌ها در شرایط آزمایشگاه خاصیت ضد قارچی قابل قبول‌تری نشان داد...</p>
-        </section>
-
-        <section id="suggestions" class="box">
-            <h2>پیشنهادات</h2>
-            <p>1. به کارگیری اسانس‌های ذکر شده به صورت نانوکپسوله...</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>کپی رایت © 2023 - نام شما</p>
-    </footer>
+  <h1>چت ساده با AI</h1>
+  <div id="chat"></div>
+  <div>
+    <input id="input" placeholder="پیام خود را بنویسید...">
+    <button onclick="send()">ارسال</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
